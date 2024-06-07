@@ -1,6 +1,6 @@
 package org.example;
 
-public class Main {
+public class Tictactoe {
 
         constructor() {
             this.player1 = new Player('X');
