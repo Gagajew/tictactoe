@@ -6,6 +6,6 @@ public class Player {
         }
 
         getMarker() {
-            returnthis.marker;
+            return.this.marker;
         }
 }
