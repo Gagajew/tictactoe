@@ -19,7 +19,7 @@ public class Tictactoe {
         }
 
         void switchCurrentPlayer() {
-            this.currentPlayer = this.currentPlayer === this.player1 ? this.player2 : this.player1;
+            this.currentPlayer = this.currentPlayer == this.player1 ? this.player2 : this.player1;
         }
 
         boolean hasWinner() {
