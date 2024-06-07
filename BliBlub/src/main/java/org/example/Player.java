@@ -1,11 +1,13 @@
 package org.example;
 
 public class Player {
-        constructor(marker) {
-            this.marker = marker;
-        }
+    private char marker;
 
-        getMarker() {
-            return.this.marker;
-        }
+    public Player(char marker) {
+        this.marker = marker;
+    }
+
+    public char getMarker() {
+        return marker;
+    }
 }
