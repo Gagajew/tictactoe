@@ -20,7 +20,7 @@ public class Board {
         }
 
         isFull() {
-            returnthis.cells.flat().every(cell => cell !== ' ');
+            returnthis.cells.flat().every(cell=> cell !== ' ');
         }
 
         clear() {
