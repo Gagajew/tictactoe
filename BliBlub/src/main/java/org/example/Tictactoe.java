@@ -28,7 +28,7 @@ public class Tictactoe { //public Methode Tictactoe
 
     }
 
-        public boolean hasWinner() { //Methode zur Überprüfung ob es einen Gewinner gibt und wer gewonnen hat
+        public void hasWinner() { //Methode zur Überprüfung, ob es einen Gewinner gibt und wer gewonnen hat
             Scanner scanner = new Scanner(System.in);
             boolean winner = false;
 
@@ -56,7 +56,7 @@ public class Tictactoe { //public Methode Tictactoe
 
                 if (board.checkWin(currentPlayer.getMarker())){ //wenn der gesetzte Marker richtig gesetzt wurde und einen Gewinner markiert
                     winner = true; //wird ein Gewinner bestimmt
-                    this.board.print(); //das board wird noch dargestellt
+                    this.board.print(); //das Board wird noch dargestellt
                     System.out.println("Player " + this.currentPlayer.getMarker() + " won!"); //Gewinner wird angezeigt
                 }
                 else{
@@ -69,6 +69,5 @@ public class Tictactoe { //public Methode Tictactoe
 
             scanner.close();
 
-            return false; // Placeholder
         }
 }
