@@ -1,13 +1,13 @@
 package org.example;
 
 public class Player {
-    private char marker;
+    private char marker; //marker definiert
 
     public Player(char marker) {
-        this.marker = marker;
+        this.marker = marker; //der Player bekommt einen Marker zugewiesen
     }
 
     public char getMarker() {
-        return marker;
+        return marker; //marker wird ausgegeben
     }
 }
