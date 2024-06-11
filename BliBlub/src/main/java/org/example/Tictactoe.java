@@ -67,7 +67,17 @@ public class Tictactoe { //public Methode Tictactoe
                 System.out.println("Wow...it's a draw!");
             }
 
-            scanner.close();
+            System.out.println("Do you want to play again? (Y/N)"); //Möglichkeit das Spiel zu wiederholen
+            String playAgain = scanner.next(); //string variable - scanner wird noch nicht unterbrochen
+
+            if(playAgain.equalsIgnoreCase("y")){ //wenn antwort des benutzers "y"
+                System.out.println("Great");
+                start();
+            }
+            else if(playAgain.equalsIgnoreCase("n")){ //wenn antwort des benutzers "n"
+                System.out.println("Okay then...goodbye!");
+                scanner.close(); //scanner wird hier unterbrochen und das System wird dann auch hier gestoppt
+            }
 
         }
 }
