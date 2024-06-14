@@ -1,0 +1,658 @@
+Index: ../TicTacToe_2/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../TicTacToe_2/.idea/vcs.xml b/../TicTacToe_2/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	
++++ b/../TicTacToe_2/.idea/vcs.xml	
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../TicTacToe_2/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../TicTacToe_2/.idea/.gitignore b/../TicTacToe_2/.idea/.gitignore
+new file mode 100644
+--- /dev/null	
++++ b/../TicTacToe_2/.idea/.gitignore	
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+Index: ../TicTacToe_2/checkstyle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../TicTacToe_2/checkstyle.xml b/../TicTacToe_2/checkstyle.xml
+new file mode 100644
+--- /dev/null	
++++ b/../TicTacToe_2/checkstyle.xml	
+@@ -0,0 +1,40 @@
++<?xml version="1.0"?>
++<!DOCTYPE module PUBLIC
++        "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN"
++        "https://checkstyle.org/dtds/configuration_1_3.dtd">
++<module name="Checker">
++
++    <property name="fileExtensions" value="java"/>
++
++    <!-- Check for appropriate line  length -->
++    <module name="LineLength">
++        <property name="max" value="100"/>
++    </module>
++
++    <module name="TreeWalker">
++        <!-- Check for appropriate method length -->
++        <module name="MethodLength">
++            <property name="max" value="30"/>
++        </module>
++
++        <!-- Check for proper indentation and braces placement -->
++        <module name="Indentation"/>
++        <module name="LeftCurly"/>
++        <module name="RightCurly"/>
++
++        <!-- Check for appropriate naming conventions -->
++        <module name="ConstantName"/>
++        <module name="IllegalIdentifierName"/>
++        <module name="LocalVariableName"/>
++        <module name="MemberName"/>
++        <module name="MethodName"/>
++        <module name="PackageName"/>
++        <module name="ParameterName"/>
++        <module name="StaticVariableName"/>
++        <module name="TypeName"/>
++
++        <!-- Check for unused imports and variables -->
++        <module name="UnusedImports"/>
++        <module name="UnusedLocalVariable"/>
++    </module>
++</module>
+Index: ../TicTacToe_2/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../TicTacToe_2/.gitignore b/../TicTacToe_2/.gitignore
+new file mode 100644
+--- /dev/null	
++++ b/../TicTacToe_2/.gitignore	
+@@ -0,0 +1,38 @@
++target/
++!.mvn/wrapper/maven-wrapper.jar
++!**/src/main/**/target/
++!**/src/test/**/target/
++
++### IntelliJ IDEA ###
++.idea/modules.xml
++.idea/jarRepositories.xml
++.idea/compiler.xml
++.idea/libraries/
++*.iws
++*.iml
++*.ipr
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++build/
++!**/src/main/**/build/
++!**/src/test/**/build/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst b/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+new file mode 100644
+--- /dev/null	
++++ b/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst	
+@@ -0,0 +1,4 @@
++C:\Users\fatim\tictactoe\BliBlub\src\main\java\org\example\Tictactoe.java
++C:\Users\fatim\tictactoe\BliBlub\src\main\java\org\example\main.java
++C:\Users\fatim\tictactoe\BliBlub\src\main\java\org\example\Player.java
++C:\Users\fatim\tictactoe\BliBlub\src\main\java\org\example\Board.java
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+new file mode 100644
+--- /dev/null	
++++ b/.idea/workspace.xml	
+@@ -0,0 +1,265 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="SELECTIVE" />
++  </component>
++  <component name="ChangeListManager">
++    <list default="true" id="7b8126ec-7e5b-433d-b023-c14d9ab3e07d" name="Changes" comment="Möglichkeit zur Wiederholung des Spiels hinzugefügt">
++      <change afterPath="$PROJECT_DIR$/../TicTacToe_2/checkstyle.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/../tictact" beforeDir="false" afterPath="$PROJECT_DIR$/../tictact" afterDir="false" />
++    </list>
++    <option name="SHOW_DIALOG" value="false" />
++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++    <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="Class" />
++        <option value="JUnit5 Test Class" />
++      </list>
++    </option>
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
++  </component>
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;,
++    &quot;assignee&quot;: &quot;Gagajew&quot;
++  }
++}</component>
++  <component name="GithubPullRequestsUISettings">{
++  &quot;selectedUrlAndAccountId&quot;: {
++    &quot;url&quot;: &quot;https://github.com/Gagajew/tictactoe.git&quot;,
++    &quot;accountId&quot;: &quot;f84aaef6-ba3c-4bf2-9df3-99b9d848712a&quot;
++  }
++}</component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 6
++}</component>
++  <component name="ProjectId" id="2hXkBclOr57HqjrwgZ5LLrXFmHI" />
++  <component name="ProjectViewState">
++    <option name="hideEmptyMiddlePackages" value="true" />
++    <option name="showLibraryContents" value="true" />
++  </component>
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
++    &quot;Application.main.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.TictactoeTest.executor&quot;: &quot;Run&quot;,
++    &quot;Maven.Unknown [test].executor&quot;: &quot;Run&quot;,
++    &quot;Maven.tictact [test].executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
++    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;Features&quot;,
++    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/fatim/tictactoe/BliBlub&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;project.validation&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
++  }
++}</component>
++  <component name="RecentsManager">
++    <key name="CreateTestDialog.Recents.Supers">
++      <recent name="" />
++    </key>
++    <key name="CreateTestDialog.RecentsKey">
++      <recent name="org.example" />
++    </key>
++  </component>
++  <component name="RunManager" selected="Application.Main">
++    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
++      <module name="TicTacT" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="org.example.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="org.example.main" />
++      <module name="TicTacT" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="org.example.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="TictactoeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++      <module name="TicTacT" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="org.example.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="org.example" />
++      <option name="MAIN_CLASS_NAME" value="org.example.TictactoeTest" />
++      <option name="TEST_OBJECT" value="class" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Application.Main" />
++        <item itemvalue="Application.main" />
++        <item itemvalue="JUnit.TictactoeTest" />
++      </list>
++    </recent_temporary>
++  </component>
++  <component name="SharedIndexes">
++    <attachedChunks>
++      <set>
++        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
++        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
++      </set>
++    </attachedChunks>
++  </component>
++  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
++  <component name="TaskManager">
++    <task active="true" id="Default" summary="Default task">
++      <changelist id="7b8126ec-7e5b-433d-b023-c14d9ab3e07d" name="Changes" comment="" />
++      <created>1717747675257</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1717747675257</updated>
++      <workItem from="1717747676360" duration="2756000" />
++      <workItem from="1717758322754" duration="71000" />
++      <workItem from="1718021953186" duration="16899000" />
++      <workItem from="1718045777922" duration="1661000" />
++      <workItem from="1718106361201" duration="17000" />
++      <workItem from="1718135927094" duration="1279000" />
++      <workItem from="1718299454303" duration="2165000" />
++      <workItem from="1718363645341" duration="1089000" />
++    </task>
++    <task id="LOCAL-00001" summary="Klasse Player Code erstellt">
++      <option name="closed" value="true" />
++      <created>1717747959397</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1717747959397</updated>
++    </task>
++    <task id="LOCAL-00002" summary="Klasse Player Code erstellt">
++      <option name="closed" value="true" />
++      <created>1717748029621</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1717748029621</updated>
++    </task>
++    <task id="LOCAL-00003" summary="Methode Player hinzugefügt --&gt; Fehlermeldung aufgehoben">
++      <option name="closed" value="true" />
++      <created>1717749813103</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1717749813103</updated>
++    </task>
++    <task id="LOCAL-00004" summary="Klasse Tictactoe &gt; public void start() bearbeitet&#10;public boolean hasWinner() Code geschrieben">
++      <option name="closed" value="true" />
++      <created>1718034292111</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1718034292111</updated>
++    </task>
++    <task id="LOCAL-00005" summary="Klasse Tictactoe Code wurde durchkommentiert">
++      <option name="closed" value="true" />
++      <created>1718040927607</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1718040927607</updated>
++    </task>
++    <task id="LOCAL-00006" summary="Klasse Player Code wurde durchkommentiert">
++      <option name="closed" value="true" />
++      <created>1718040941132</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1718040941132</updated>
++    </task>
++    <task id="LOCAL-00007" summary="Testing für alle Klassen erstellt">
++      <option name="closed" value="true" />
++      <created>1718044159614</created>
++      <option name="number" value="00007" />
++      <option name="presentableId" value="LOCAL-00007" />
++      <option name="project" value="LOCAL" />
++      <updated>1718044159614</updated>
++    </task>
++    <task id="LOCAL-00008" summary="Warnungen behoben">
++      <option name="closed" value="true" />
++      <created>1718047318772</created>
++      <option name="number" value="00008" />
++      <option name="presentableId" value="LOCAL-00008" />
++      <option name="project" value="LOCAL" />
++      <updated>1718047318772</updated>
++    </task>
++    <task id="LOCAL-00009" summary="Warnungen behoben">
++      <option name="closed" value="true" />
++      <created>1718047339476</created>
++      <option name="number" value="00009" />
++      <option name="presentableId" value="LOCAL-00009" />
++      <option name="project" value="LOCAL" />
++      <updated>1718047339476</updated>
++    </task>
++    <task id="LOCAL-00010" summary="Möglichkeit zur Wiederholung des Spiels hinzugefügt">
++      <option name="closed" value="true" />
++      <created>1718137203132</created>
++      <option name="number" value="00010" />
++      <option name="presentableId" value="LOCAL-00010" />
++      <option name="project" value="LOCAL" />
++      <updated>1718137203132</updated>
++    </task>
++    <option name="localTasksCounter" value="11" />
++    <servers />
++  </component>
++  <component name="TypeScriptGeneratedFilesManager">
++    <option name="version" value="3" />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="Klasse Player Code erstellt" />
++    <MESSAGE value="Methode Player hinzugefügt --&gt; Fehlermeldung aufgehoben" />
++    <MESSAGE value="Klasse Tictactoe &gt; public void start() bearbeitet&#10;public boolean hasWinner() Code geschrieben" />
++    <MESSAGE value="Klasse Tictactoe Code wurde durchkommentiert" />
++    <MESSAGE value="Klasse Player Code wurde durchkommentiert" />
++    <MESSAGE value="Testing für alle Klassen erstellt" />
++    <MESSAGE value="aktualisiert" />
++    <MESSAGE value="Warnungen behoben" />
++    <MESSAGE value="Projekt" />
++    <MESSAGE value="Möglichkeit zur Wiederholung des Spiels hinzugefügt" />
++    <option name="LAST_COMMIT_MESSAGE" value="Möglichkeit zur Wiederholung des Spiels hinzugefügt" />
++  </component>
++</project>
+\ No newline at end of file
+Index: target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst b/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+new file mode 100644
+--- /dev/null	
++++ b/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst	
+@@ -0,0 +1,3 @@
++C:\Users\fatim\tictactoe\BliBlub\src\test\java\org\example\PlayerTest.java
++C:\Users\fatim\tictactoe\BliBlub\src\test\java\org\example\BoardTest.java
++C:\Users\fatim\tictactoe\BliBlub\src\test\java\org\example\TictactoeTest.java
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+new file mode 100644
+--- /dev/null	
++++ b/.idea/compiler.xml	
+@@ -0,0 +1,15 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <annotationProcessing>
++      <profile name="Maven default annotation processors profile" enabled="true">
++        <sourceOutputDir name="target/generated-sources/annotations" />
++        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
++        <outputRelativeToContentRoot value="true" />
++      </profile>
++    </annotationProcessing>
++    <bytecodeTargetLevel>
++      <module name="TicTacT" target="1.8" />
++    </bytecodeTargetLevel>
++  </component>
++</project>
+\ No newline at end of file
+Index: target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst b/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+new file mode 100644
+--- /dev/null	
++++ b/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst	
+@@ -0,0 +1,3 @@
++org\example\Tictactoe.class
++org\example\Board.class
++org\example\Player.class
+Index: ../TicTacToe_2/src/main/java/org/example/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../TicTacToe_2/src/main/java/org/example/Main.java b/../TicTacToe_2/src/main/java/org/example/Main.java
+new file mode 100644
+--- /dev/null	
++++ b/../TicTacToe_2/src/main/java/org/example/Main.java	
+@@ -0,0 +1,7 @@
++package org.example;
++
++public class Main {
++    public static void main(String[] args) {
++        System.out.println("Hello world!");
++    }
++}
+\ No newline at end of file
+Index: ../TicTacToe_2/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../TicTacToe_2/pom.xml b/../TicTacToe_2/pom.xml
+new file mode 100644
+--- /dev/null	
++++ b/../TicTacToe_2/pom.xml	
+@@ -0,0 +1,59 @@
++<?xml version="1.0"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>org.example</groupId>
++    <artifactId>tictact</artifactId>
++    <version>1.0-SNAPSHOT</version>
++    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-checkstyle-plugin -->
++    <properties>
++        <maven.compiler.source>8</maven.compiler.source>
++        <maven.compiler.target>8</maven.compiler.target>
++    </properties>
++    <dependencies>
++        <dependency>
++            <groupId>junit</groupId>
++            <artifactId>junit</artifactId>
++            <version>4.13.2</version>
++            <scope>test</scope>
++        </dependency>
++        <dependency>
++            <groupId>org.junit.jupiter</groupId>
++            <artifactId>junit-jupiter</artifactId>
++            <version>5.11.0-M2</version>
++            <scope>test</scope>
++        </dependency>
++    </dependencies>
++
++    <build>
++        <plugins>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-surefire-plugin</artifactId>
++                <version>3.2.5</version>
++            </plugin>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-checkstyle-plugin</artifactId>
++                <version>3.3.1</version>
++                <configuration>
++                    <configLocation>checkstyle.xml</configLocation>
++                </configuration>
++            </plugin>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-resources-plugin</artifactId>
++                <version>3.3.1</version>
++                <configuration>
++                    <encoding>UTF-8</encoding>
++                </configuration>
++            </plugin>
++        </plugins>
++
++    </build>
++
++
++
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	
++++ b/.idea/misc.xml	
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="ProjectRootManager">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/jarRepositories.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/jarRepositories.xml b/.idea/jarRepositories.xml
+new file mode 100644
+--- /dev/null	
++++ b/.idea/jarRepositories.xml	
+@@ -0,0 +1,20 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="RemoteRepositoriesConfiguration">
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Central Repository" />
++      <option name="url" value="https://repo.maven.apache.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Maven Central repository" />
++      <option name="url" value="https://repo1.maven.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="jboss.community" />
++      <option name="name" value="JBoss Community repository" />
++      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
++    </remote-repository>
++  </component>
++</project>
+\ No newline at end of file
+Index: ../TicTacToe_2/.idea/encodings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../TicTacToe_2/.idea/encodings.xml b/../TicTacToe_2/.idea/encodings.xml
+new file mode 100644
+--- /dev/null	
++++ b/../TicTacToe_2/.idea/encodings.xml	
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Encoding">
++    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../TicTacToe_2/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../TicTacToe_2/.idea/misc.xml b/../TicTacToe_2/.idea/misc.xml
+new file mode 100644
+--- /dev/null	
++++ b/../TicTacToe_2/.idea/misc.xml	
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="MavenProjectsManager">
++    <option name="originalFiles">
++      <list>
++        <option value="$PROJECT_DIR$/pom.xml" />
++      </list>
++    </option>
++  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_22" default="true" project-jdk-name="22" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst b/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+new file mode 100644
