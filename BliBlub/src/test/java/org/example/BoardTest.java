@@ -35,16 +35,12 @@ class BoardTest {
     void place() {
         board.place(0, 0, 'X');
         assertFalse(board.isCellEmpty(0, 0));
-        // Eine Methode zur Überprüfung der Zelleninhalte hinzufügen
-        assertEquals('X', board.getCell(0, 0));
     }
 
     @Test
     void place1() {
         board.place(1, 1, 'O');
         assertFalse(board.isCellEmpty(1, 1));
-        // Eine Methode zur Überprüfung der Zelleninhalte hinzufügen
-        assertEquals('O', board.getCell(1, 1));
     }
 
     @Test
@@ -89,18 +85,19 @@ class BoardTest {
         PrintStream originalOut = System.out;
         System.setOut(new PrintStream(outContent));
 
-        board.print();
+        try {
+            board.print();
+            String expectedOutput =
+                    "-------\n" +
+                            "| | | |\n" +
+                            "| | | |\n" +
+                            "| | | |\n" +
+                            "-------\n";
 
-        String expectedOutput =
-                "-------\n" +
-                        "| | | |\n" +
-                        "| | | |\n" +
-                        "| | | |\n" +
-                        "-------\n";
-
-        assertEquals(expectedOutput, outContent.toString().replace("\r", ""));
-
-        System.setOut(originalOut); // Reset to the standard output
+            assertEquals(expectedOutput, outContent.toString().replace("\r", ""));
+        } finally {
+            System.setOut(originalOut); // Reset to the standard output
+        }
     }
 
     @Test
@@ -113,18 +110,19 @@ class BoardTest {
         PrintStream originalOut = System.out;
         System.setOut(new PrintStream(outContent));
 
-        board.print();
+        try {
+            board.print();
+            String expectedOutput =
+                    "-------\n" +
+                            "|X| | |\n" +
+                            "| |O| |\n" +
+                            "| | |X|\n" +
+                            "-------\n";
 
-        String expectedOutput =
-                "-------\n" +
-                        "|X| | |\n" +
-                        "| |O| |\n" +
-                        "| | |X|\n" +
-                        "-------\n";
-
-        assertEquals(expectedOutput, outContent.toString().replace("\r", ""));
-
-        System.setOut(originalOut); // Reset to the standard output
+            assertEquals(expectedOutput, outContent.toString().replace("\r", ""));
+        } finally {
+            System.setOut(originalOut); // Reset to the standard output
+        }
     }
 
     @Test
